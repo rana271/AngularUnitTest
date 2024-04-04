@@ -24,6 +24,7 @@ describe('HelloWorldComponent', () => {
     const name = 'Alice';
     component.name = name;
     fixture.detectChanges();
+    //Unit Test Comments
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('p').textContent).toContain(`Hello, ${name}!`);
   });
